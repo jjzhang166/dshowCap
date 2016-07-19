@@ -197,7 +197,7 @@ int StartCaptureAudio(struct AudioCaptureContext* pAudioCapContext, const char* 
     avdevice_register_all();
 
     AVDictionary* options = NULL;
-    av_dict_set(&options, "rtbufsize", "20M", 0);
+    av_dict_set(&options, "rtbufsize", "40M", 0);
 
     AVInputFormat *ifmt = av_find_input_format("dshow");
 
